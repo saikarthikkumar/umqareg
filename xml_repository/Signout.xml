@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page-elements>
+  <page-element no="1">
+    <type>button</type>
+    <id>user_details_tab</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+  </page-element>
+
+  <page-element no="2">
+    <type></type>
+    <id>user_logout_dd</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+  </page-element>
+</page-elements>

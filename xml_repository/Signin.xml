@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page-elements>
+  <page-element no="1">
+    <type>button</type>
+    <id></id>
+    <name>username</name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>sairam</data>
+    <!--<<data>test-Sp1</data> -->
+    <!-- <data>Stq-ves1</data> -->
+    <!-- <data>Stq-fed1</data> -->
+    
+  </page-element>
+
+  <page-element no="2">
+    <type>button</type>
+    <id></id>
+    <name>password</name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>sciits</data>
+    <!--<data>Welcome_1</data> -->
+  </page-element>
+
+  <page-element no="3">
+    <type>submit</type>
+    <id>signin_btn</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+  </page-element>
+</page-elements>
