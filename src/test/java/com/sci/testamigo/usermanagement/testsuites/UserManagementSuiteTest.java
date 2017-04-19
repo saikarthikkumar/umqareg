@@ -33,6 +33,9 @@ public class UserManagementSuiteTest {
       FEATUREDETAILS = reportManager.populateInitialData(Secondaryauthorizationdeatils.class.getSimpleName());
       runnersetup.UMrunnerOptions(appsetup.getFeatureName(Secondaryauthorizationdeatils.class.getSimpleName()));
       
+      FEATUREDETAILS = reportManager.populateInitialData(EditProfile.class.getSimpleName());
+      runnersetup.UMrunnerOptions(appsetup.getFeatureName(EditProfile.class.getSimpleName()));
+      
       FEATUREDETAILS = reportManager.populateInitialData(Signout.class.getSimpleName());    
       headerFile.postRequisites();
 
