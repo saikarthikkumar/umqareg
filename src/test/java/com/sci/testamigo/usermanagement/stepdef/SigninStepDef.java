@@ -41,8 +41,8 @@ public class SigninStepDef {
 
   // ==================================================================================
 
-  @Given("^user is redirected to PQ Tool Login page$")
-  public void user_is_redirected_to_PQ_Tool_Login_page() throws Throwable {
+  @Given("^user is redirected to Login page$")
+  public void user_is_redirected_to_Login_page() throws Throwable {
     try {
       log.info("Start of the Scenario Login to PQ Tool application as a user");
       customMessage = "Navigating to URL";
