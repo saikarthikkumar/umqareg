@@ -39,7 +39,7 @@ public class SignOutStepDef {
       customMessage = "Clicking on Super User button";
       WebElementDetails superUserBtnObj = webElementsList.get(0);
       signout.superUser(superUserBtnObj).click();
-      Thread.sleep(1000);
+      Thread.sleep(2000);
       customMessage = "Clicking on Logout button";
       WebElementDetails logoutBtnObj = webElementsList.get(1);
       signout.signoutBtn(logoutBtnObj).click();
