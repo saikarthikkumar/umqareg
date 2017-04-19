@@ -12,6 +12,7 @@ import com.sci.testamigo.usermanagement.report.ReportManager;
 import com.sci.testamigo.usermanagement.util.AppSetup;
 import com.sci.testamigo.usermanagement.util.HeaderFile;
 import com.sci.testamigo.usermanagement.util.RunnerSetup;
+import com.sci.testamigo.usermanagement.pageobjects.EditProfile;
 
 public class UserManagementSuiteTest {
   AppSetup appsetup = new AppSetup();
