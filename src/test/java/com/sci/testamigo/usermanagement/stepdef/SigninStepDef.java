@@ -78,7 +78,7 @@ public class SigninStepDef {
       
       Thread.sleep(12000);
       customMessage = "Verifying the login";
-      Assert.assertEquals("Login Failed", True, driver.findElements(By.id("user_details_tab")).size()>0));
+      Assert.assertEquals("Login Failed", true, driver.findElements(By.id("user_details_tab")).size()>0);
     } catch (Exception e) {
       new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
     } catch (java.lang.AssertionError e) {
