@@ -44,7 +44,7 @@ public class SigninStepDef {
   @Given("^user is redirected to Login page$")
   public void user_is_redirected_to_Login_page() throws Throwable {
     try {
-      log.info("Start of the Scenario Login to PQ Tool application as a user");
+      log.info("Start of the Scenario Login to User Management application as a user");
       customMessage = "Navigating to URL";
       resourceBundle = ResourceBundle.getBundle("ApplicationResources");
       driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -70,16 +70,15 @@ public class SigninStepDef {
 
       customMessage = "Enter Password";
       WebElementDetails passwordTextBoxObj = webElementsList.get(1);
-      System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());
       login.Password(passwordTextBoxObj).sendKeys(passwordTextBoxObj.getData());
 
       customMessage = "Clicking on Signin Button";
       WebElementDetails loginBtnObj = webElementsList.get(2);
       login.loginbtn(loginBtnObj).click();
       
-      Thread.sleep(1000);
+      Thread.sleep(12000);
       customMessage = "Verifying the login";
-      Assert.assertTrue("Login Failed", driver.findElement(By.id("user_details_tab")).isDisplayed());
+      Assert.assertEquals("Login Failed", True, driver.findElements(By.id("user_details_tab")).size()>0;
     } catch (Exception e) {
       new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
     } catch (java.lang.AssertionError e) {
