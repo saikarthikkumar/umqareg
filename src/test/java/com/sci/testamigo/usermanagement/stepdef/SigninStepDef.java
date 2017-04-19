@@ -49,7 +49,7 @@ public class SigninStepDef {
       resourceBundle = ResourceBundle.getBundle("ApplicationResources");
       driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
       driver.get(resourceBundle.getString(Constants.APPLICATION_URL));
-      Assert.assertTrue("Landing page failed", driver.getTitle().equals("User Managemen"));
+      Assert.assertTrue("Landing page failed", driver.getTitle().equals("User Management"));
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       driver.manage().window().maximize();
     } catch (Exception e) {
