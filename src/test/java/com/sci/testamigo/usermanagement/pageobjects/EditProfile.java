@@ -2,12 +2,12 @@
  * @author Karthik
  *
  */
-package com.sci.testamigo.pqt.pageobjects;
+package com.sci.testamigo.usermanagement.pageobjects;
 
 import org.openqa.selenium.WebElement;
 
-import com.sci.testamigo.pqt.model.WebElementDetails;
-import com.sci.testamigo.pqt.util.JWebElement;
+import com.sci.testamigo.usermanagement.model.WebElementDetails;
+import com.sci.testamigo.usermanagement.util.JWebElement;
 
 public class EditProfile {
 
