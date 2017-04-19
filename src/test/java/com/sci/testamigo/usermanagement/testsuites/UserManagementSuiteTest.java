@@ -4,6 +4,7 @@ import static com.sci.testamigo.usermanagement.common.Constants.FEATUREDETAILS;
 
 import org.junit.Test;
 
+import com.sci.testamigo.usermanagement.pageobjects.EditProfile;
 import com.sci.testamigo.usermanagement.pageobjects.Secondaryauthorizationdeatils;
 import com.sci.testamigo.usermanagement.pageobjects.Signin;
 import com.sci.testamigo.usermanagement.pageobjects.Signout;
@@ -12,7 +13,6 @@ import com.sci.testamigo.usermanagement.report.ReportManager;
 import com.sci.testamigo.usermanagement.util.AppSetup;
 import com.sci.testamigo.usermanagement.util.HeaderFile;
 import com.sci.testamigo.usermanagement.util.RunnerSetup;
-import com.sci.testamigo.usermanagement.pageobjects.EditProfile;
 
 public class UserManagementSuiteTest {
   AppSetup appsetup = new AppSetup();
@@ -29,7 +29,6 @@ public class UserManagementSuiteTest {
       
       FEATUREDETAILS = reportManager.populateInitialData(Users.class.getSimpleName());
       runnersetup.UMrunnerOptions(appsetup.getFeatureName(Users.class.getSimpleName()));
-      
       
       FEATUREDETAILS = reportManager.populateInitialData(Secondaryauthorizationdeatils.class.getSimpleName());
       runnersetup.UMrunnerOptions(appsetup.getFeatureName(Secondaryauthorizationdeatils.class.getSimpleName()));
