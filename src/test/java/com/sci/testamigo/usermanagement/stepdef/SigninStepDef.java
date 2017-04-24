@@ -64,6 +64,7 @@ public class SigninStepDef {
   @And("^enters valid credentials and click on Signin button$")
   public void enters_valid_credentials_and_click_on_Signin_button() throws Throwable {
     try {
+      Assert.assertEquals("Sign in Page title Verification","Sin in", driver.findElement(By.className("panel-title")).getText());
       customMessage = "Enter Username";
       WebElementDetails userNameTextBoxObj = webElementsList.get(0);
       login.Username(userNameTextBoxObj).sendKeys(userNameTextBoxObj.getData());
