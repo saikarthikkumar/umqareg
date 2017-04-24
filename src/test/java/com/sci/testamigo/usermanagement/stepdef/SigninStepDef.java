@@ -79,7 +79,7 @@ public class SigninStepDef {
       
       Thread.sleep(12000);
       customMessage = "Verifying the login";
-      Assert.assertEquals("Sign-in success: Page title Verification","Welcome to the Demo BPA User", driver.findElement(By.xpath(".//*[@id='wrap']/div/div[2]/div/div/div/h1")).getText());
+      Assert.assertEquals("Home Page title Verification","Welcome to the Demo BPA User", driver.findElement(By.xpath(".//*[@id='wrap']/div/div[2]/div/div/div/h1")).getText());
       Assert.assertEquals("Login Failed", true, driver.findElements(By.id("user_details_tab")).size()>0);
     } catch (Exception e) {
       new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
