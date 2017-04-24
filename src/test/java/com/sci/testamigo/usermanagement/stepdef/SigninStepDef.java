@@ -64,7 +64,7 @@ public class SigninStepDef {
   @And("^enters valid credentials and click on Signin button$")
   public void enters_valid_credentials_and_click_on_Signin_button() throws Throwable {
     try {
-      Assert.assertEquals("Sign in Page title Verification","Sin in", driver.findElement(By.className("panel-title")).getText());
+      Assert.assertEquals("Sign in Page title Verification","Sign in", driver.findElement(By.className("panel-title")).getText());
       customMessage = "Enter Username";
       WebElementDetails userNameTextBoxObj = webElementsList.get(0);
       login.Username(userNameTextBoxObj).sendKeys(userNameTextBoxObj.getData());
@@ -79,6 +79,7 @@ public class SigninStepDef {
       
       Thread.sleep(12000);
       customMessage = "Verifying the login";
+      Assert.assertEquals("Sign-in success: Page title Verification","Welcome to the demo BPA User", driver.findElement(By.xpath(".//*[@id='wrap']/div/div[2]/div/div/div/h1")).getText());
       Assert.assertEquals("Login Failed", true, driver.findElements(By.id("user_details_tab")).size()>0);
     } catch (Exception e) {
       new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
