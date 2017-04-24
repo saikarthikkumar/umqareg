@@ -8,11 +8,7 @@
     <cssSelector></cssSelector>
     <xPath></xPath>
     <linkText></linkText>
-    <data>sairam</data>
-    <!--<<data>test-Sp1</data> -->
-    <!-- <data>Stq-ves1</data> -->
-    <!-- <data>Stq-fed1</data> -->
-    
+    <data>bpa</data>
   </page-element>
 
   <page-element no="2">
@@ -23,7 +19,7 @@
     <cssSelector></cssSelector>
     <xPath></xPath>
     <linkText></linkText>
-    <data>sciits</data>
+    <data>welcome_1</data>
     <!--<data>Welcome_1</data> -->
   </page-element>
 
