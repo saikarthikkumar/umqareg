@@ -64,7 +64,9 @@ public class SigninStepDef {
   @And("^enters valid credentials and click on Signin button$")
   public void enters_valid_credentials_and_click_on_Signin_button() throws Throwable {
     try {
+      log.info("Start of the Scenario Sign in Page title Verification");
       Assert.assertEquals("Sign in Page title Verification","Sign in", driver.findElement(By.className("panel-title")).getText());
+      log.info("End of the Scenario Sign in Page title Verification");
       customMessage = "Enter Username";
       WebElementDetails userNameTextBoxObj = webElementsList.get(0);
       login.Username(userNameTextBoxObj).sendKeys(userNameTextBoxObj.getData());
@@ -79,8 +81,10 @@ public class SigninStepDef {
       
       Thread.sleep(12000);
       customMessage = "Verifying the login";
+      log.info("Start of the Scenario Home Page title Verification");
       //Assert.assertEquals("Home Page title Verification","Welcome to the Demo EPA User", driver.findElement(By.xpath(".//*[@id='wrap']/div/div[2]/div/div/div/h1")).getText());
-      Assert.assertEquals("Home Page title Verification","Welcome to the Demo EPA User", driver.findElement(By.id("welcome_msg_lbl")).getText());
+      Assert.assertEquals("Home Page title Verification Failed","Welcome to the Demo EPA User", driver.findElement(By.id("welcome_msg_lbl")).getText());
+      log.info("End of the Scenario Home Page title:Welcome to the Demo EPA User Verification Successful");
       Assert.assertEquals("Login Failed", true, driver.findElements(By.id("user_details_tab")).size()>0);
     } catch (Exception e) {
       new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
