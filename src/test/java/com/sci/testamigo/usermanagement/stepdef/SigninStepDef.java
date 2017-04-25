@@ -83,7 +83,7 @@ public class SigninStepDef {
       customMessage = "Verifying the login";
       log.info("Start of the Scenario Home Page title Verification");
       //Assert.assertEquals("Home Page title Verification","Welcome to the Demo EPA User", driver.findElement(By.xpath(".//*[@id='wrap']/div/div[2]/div/div/div/h1")).getText());
-      Assert.assertEquals("Home Page title Verification Failed","Welcome to the Demo EPA User", driver.findElement(By.id("welcome_msg_lbl")).getText());
+      Assert.assertEquals("Home Page title Verification Failed","Welcome to the demo EPA User", driver.findElement(By.id("welcome_msg_lbl")).getText());
       log.info("End of the Scenario Home Page title:Welcome to the Demo EPA User Verification Successful");
       Assert.assertEquals("Login Failed", true, driver.findElements(By.id("user_details_tab")).size()>0);
     } catch (Exception e) {
