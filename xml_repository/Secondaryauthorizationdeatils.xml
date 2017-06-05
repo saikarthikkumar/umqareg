@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page-elements>
+  <page-element no="1">
+    <type>button</type>
+    <id>user_details_tab</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+    <!--<<data>test-Sp1</data> -->
+    <!-- <data>Stq-ves1</data> -->
+    <!-- <data>Stq-fed1</data> -->
+    
+  </page-element>
+
+  <page-element no="2">
+    <type>button</type>
+    <id>update_secondary_authorization_dd</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+    <!--<data>Welcome_1</data> -->
+  </page-element>
+
+  <page-element no="3">
+    <type></type>
+    <id>AuthQues1</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>What is your birthday</data>
+  </page-element>
+  
+    <page-element no="4">
+    <type></type>
+    <id></id>
+    <name>firstAnswer</name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>24/08/1996</data>
+  </page-element>
+  
+  <page-element no="5">
+    <type></type>
+    <id>AuthQues2</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>What is your favorite country</data>
+  </page-element>
+  
+  <page-element no="6">
+    <type></type>
+    <id></id>
+    <name>secondAnswer</name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data>India</data>
+  </page-element>
+  
+  <page-element no="7">
+    <type></type>
+    <id>save_btn</id>
+    <name></name>
+    <className></className>
+    <cssSelector></cssSelector>
+    <xPath></xPath>
+    <linkText></linkText>
+    <data></data>
+  </page-element>
+</page-elements>
