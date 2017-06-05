@@ -44,7 +44,7 @@ public class SigninStepDef {
   @Given("^user is redirected to Login page$")
   public void user_is_redirected_to_Login_page() throws Throwable {
     try {
-      log.info("Start of the Scenario Login to PQ Tool application as a user");
+      log.info("Start of the Scenario Login to User Management application as a user");
       customMessage = "Navigating to URL";
       resourceBundle = ResourceBundle.getBundle("ApplicationResources");
       driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -70,7 +70,7 @@ public class SigninStepDef {
 
       customMessage = "Enter Password";
       WebElementDetails passwordTextBoxObj = webElementsList.get(1);
-      System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());
+      //System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());
       login.Password(passwordTextBoxObj).sendKeys(passwordTextBoxObj.getData());
 
       customMessage = "Clicking on Signin Button";
