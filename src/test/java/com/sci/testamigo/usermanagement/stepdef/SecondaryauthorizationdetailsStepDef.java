@@ -52,6 +52,7 @@ public class SecondaryauthorizationdetailsStepDef {
 		      customMessage = "Enter Password";
 		      WebElementDetails passwordTextBoxObj = loginWebElementsList.get(1);
 		      login.Password(passwordTextBoxObj).sendKeys(passwordTextBoxObj.getData());
+		      login.Username(userNameTextBoxObj).click();	
 
 		      customMessage = "Clicking on Signin Button";
 		      WebElementDetails loginBtnObj = loginWebElementsList.get(2);
