@@ -71,7 +71,7 @@ public class AppSetup {
         }
       }
     }
-    System.out.println(">>>>>>>>>"+actualFeatureName);
+    //System.out.println(">>>>>>>>>"+actualFeatureName);
     return actualFeatureName;
   }
 
