@@ -24,12 +24,12 @@ public class PageCommonWD {
   private PageCommonWD() {
     resourceBundle = ResourceBundle.getBundle("ApplicationResources");
     if (resourceBundle.getString(Constants.BROWSER_NAME).equalsIgnoreCase("firefox")) {
-      // Setup firefox binary to start in Xvfb        
-        /*String Xport = System.getProperty("lmportal.xvfb.id", ":1");
+      Setup firefox binary to start in Xvfb        
+        String Xport = System.getProperty("lmportal.xvfb.id", ":1");
         final File firefoxPath = new File(System.getProperty("lmportal.deploy.firefox.path", "/usr/bin/firefox"));
         FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
         firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
-        driver = new FirefoxDriver(firefoxBinary, null);*/
+        driver = new FirefoxDriver(firefoxBinary, null);
     	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers//geckodriver.exe");
     	this.driver = new FirefoxDriver();
     } else if (resourceBundle.getString(Constants.BROWSER_NAME).equalsIgnoreCase("chrome")) {
