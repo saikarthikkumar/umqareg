@@ -52,8 +52,8 @@
         <configuration>
             <server>https://behave.pro</server>
             <projectKey>10600</projectKey>
-        <username>amlyYTo5ZTEzOTE4Mi03ZTZiLTQ2ZDMtOWRiYS05NmI2M2RjNGZlYzY=</username>
-        <password>959030f67686a763653a4d1ca3de983d46025910</password>
+            <username>amlyYTo5ZTEzOTE4Mi03ZTZiLTQ2ZDMtOWRiYS05NmI2M2RjNGZlYzY=</username>
+            <password>959030f67686a763653a4d1ca3de983d46025910</password>
         </configuration>
         <executions>
             <execution>
@@ -159,7 +159,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.2.0</version>
+			<version>2.53.1</version>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
