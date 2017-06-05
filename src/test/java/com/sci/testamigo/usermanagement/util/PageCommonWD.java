@@ -30,7 +30,7 @@ public class PageCommonWD {
         FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
         firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
         driver = new FirefoxDriver(firefoxBinary, null);
-    	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers//geckodriver.exe");
+    	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers//geckodriver");
     	this.driver = new FirefoxDriver();
     } else if (resourceBundle.getString(Constants.BROWSER_NAME).equalsIgnoreCase("chrome")) {
 	   /* String Xport = System.getProperty("lmportal.xvfb.id", ":1");
