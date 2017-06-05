@@ -24,7 +24,7 @@ public class PageCommonWD {
   private PageCommonWD() {
     resourceBundle = ResourceBundle.getBundle("ApplicationResources");
     if (resourceBundle.getString(Constants.BROWSER_NAME).equalsIgnoreCase("firefox")) {
-      Setup firefox binary to start in Xvfb        
+      //Setup firefox binary to start in Xvfb        
         String Xport = System.getProperty("lmportal.xvfb.id", ":1");
         final File firefoxPath = new File(System.getProperty("lmportal.deploy.firefox.path", "/usr/bin/firefox"));
         FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
