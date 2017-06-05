@@ -47,14 +47,14 @@ public class SecondaryauthorizationdetailsStepDef {
 			
 			customMessage = "Enter Username";
 		      WebElementDetails userNameTextBoxObj = loginWebElementsList.get(0);
-	        System.out.println("<<<<<<>>>>>>>>>"+Constants.userName);	      
+	       // System.out.println("<<<<<<>>>>>>>>>"+Constants.userName);	      
         		login.Username(userNameTextBoxObj).sendKeys(Constants.userName);
 			
 
 		      customMessage = "Enter Password";
 		      WebElementDetails passwordTextBoxObj = loginWebElementsList.get(1);
 		      login.Password(passwordTextBoxObj).sendKeys(passwordTextBoxObj.getData());
-		System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());	
+		//System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());	
 		      login.Username(userNameTextBoxObj).click();	
 
 		      customMessage = "Clicking on Signin Button";
