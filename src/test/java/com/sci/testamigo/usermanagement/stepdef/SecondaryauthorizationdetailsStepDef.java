@@ -47,7 +47,7 @@ public class SecondaryauthorizationdetailsStepDef {
 			
 			customMessage = "Enter Username";
 		      WebElementDetails userNameTextBoxObj = loginWebElementsList.get(0);
-	              System.out.println("<<<<<<>>>>>>>>>"+userNameTextBoxObj.getData());
+	        System.out.println("<<<<<<>>>>>>>>>"+Constants.userName);	      
         		login.Username(userNameTextBoxObj).sendKeys(Constants.userName);
 			
 
