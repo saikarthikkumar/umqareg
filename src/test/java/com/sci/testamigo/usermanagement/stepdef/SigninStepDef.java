@@ -72,6 +72,7 @@ public class SigninStepDef {
       WebElementDetails passwordTextBoxObj = webElementsList.get(1);
       //System.out.println("<<<<<<>>>>>>>>>"+passwordTextBoxObj.getData());
       login.Password(passwordTextBoxObj).sendKeys(passwordTextBoxObj.getData());
+      login.Username(userNameTextBoxObj).click();
 
       customMessage = "Clicking on Signin Button";
       WebElementDetails loginBtnObj = webElementsList.get(2);
