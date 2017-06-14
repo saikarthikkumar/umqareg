@@ -65,7 +65,7 @@ public class SecondaryauthorizationdetailsStepDef {
 			Thread.sleep(3000);
 			WebElementDetails userNameBtnObj = webElementsList.get(0);
 			Thread.sleep(5000);
-			System.out.println(userNameBtnObj.getId());
+			//System.out.println(userNameBtnObj.getId());
 			
 			/* Change Password */
 			Thread.sleep(2000);
