@@ -68,14 +68,17 @@ public class SecondaryauthorizationdetailsStepDef {
 			System.out.println(userNameBtnObj.getId());
 			
 			/* Change Password */
+			Thread.sleep(2000);
 			driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
+			Thread.sleep(2000);
 			driver.findElement(By.id("new_pswd_tb")).sendKeys("welcome_1");
+			Thread.sleep(2000);
 			driver.findElement(By.id("confirm_new_pswd_tb")).sendKeys("welcome_1");
+			Thread.sleep(2000);
 			driver.findElement(By.id("change_pswd_btn")).click();
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			//secondaryauthorizationdeatils.userName(userNameBtnObj).click();
-			
 			
 			
 			/*WebElementDetails updateSecondaryAuthObj = webElementsList.get(1);
@@ -138,6 +141,7 @@ public class SecondaryauthorizationdetailsStepDef {
 	@Then("^i should display the error messages on-screen$")
 	public void i_should_display_the_error_messages_on_screen() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
+		
 		throw new PendingException();
 	}
 }
