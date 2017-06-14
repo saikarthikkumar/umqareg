@@ -65,21 +65,20 @@ public class SecondaryauthorizationdetailsStepDef {
 			Thread.sleep(3000);
 			WebElementDetails userNameBtnObj = webElementsList.get(0);
 			Thread.sleep(5000);
-			//System.out.println(userNameBtnObj.getId());
+			System.out.println(userNameBtnObj.getId());
 			
 			/* Change Password */
 			driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
-			Thread.sleep(1000);
 			driver.findElement(By.id("new_pswd_tb")).sendKeys("welcome_1");
-			Thread.sleep(500);
 			driver.findElement(By.id("confirm_new_pswd_tb")).sendKeys("welcome_1");
-			Thread.sleep(500);
 			driver.findElement(By.id("change_pswd_btn")).click();
 			
-			/*driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			secondaryauthorizationdeatils.userName(userNameBtnObj).click();
-						
-			WebElementDetails updateSecondaryAuthObj = webElementsList.get(1);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			//secondaryauthorizationdeatils.userName(userNameBtnObj).click();
+			
+			
+			
+			/*WebElementDetails updateSecondaryAuthObj = webElementsList.get(1);
 			secondaryauthorizationdeatils.updateSecondaryAuthrization(updateSecondaryAuthObj).click();*/
 			
 			Thread.sleep(1000);
@@ -122,9 +121,6 @@ public class SecondaryauthorizationdetailsStepDef {
 			
 			WebElementDetails updateBtnObj = webElementsList.get(6);
 			secondaryauthorizationdeatils.update(updateBtnObj).click();
-			/*SignOutStepDef signOutStepDef = new SignOutStepDef();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			signOutStepDef.click_on_Logout_button();*/
 			
 		    } catch (Exception e) {
 		      new TestAmigoException().handleException(e, customMessage, AppSetup.getMethodName());
