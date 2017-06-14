@@ -56,7 +56,7 @@ public class UserStepDef {
       Thread.sleep(1000);
       
       Random ran = new Random();
-		int code = (100 + ran.nextInt(999));
+		int code = (10000 + ran.nextInt(99999));
 		
       customMessage = "Enter Username";
       WebElementDetails userNameTxtBoxObj = webElementsList.get(2);
